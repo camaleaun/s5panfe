@@ -1,0 +1,13 @@
+// panfe font icons
+
+// Import the font
+@font-face {
+  font-family: siconpanfe;
+  src: url('#{$icon-font-path}siconpanfe.eot');
+  src: url('#{$icon-font-path}siconpanfe.eot?#iefix') format('embedded-opentype'),
+       url('#{$icon-font-path}siconpanfe.woff2') format('woff2'),
+       url('#{$icon-font-path}siconpanfe.woff') format('woff'),
+       url('#{$icon-font-path}siconpanfe.ttf') format('truetype'),
+       url('#{$icon-font-path}siconpanfe.svg#siconpanfe') format('svg');
+}
+
