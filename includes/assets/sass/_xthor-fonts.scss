@@ -1,0 +1,13 @@
+// Xthor Selo
+
+// Import the font
+@font-face {
+  font-family: xthor;
+  src: url('#{$icon-font-path}xthor.eot');
+  src: url('#{$icon-font-path}xthor.eot?#iefix') format('embedded-opentype'),
+       url('#{$icon-font-path}xthor.woff2') format('woff2'),
+       url('#{$icon-font-path}xthor.woff') format('woff'),
+       url('#{$icon-font-path}xthor.ttf') format('truetype'),
+       url('#{$icon-font-path}xthor.svg#xthor') format('svg');
+}
+

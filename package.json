@@ -1,0 +1,28 @@
+{
+  "name": "s5panfe",
+  "version": "1.0.0",
+  "description": "Portal auxiliary brazilian electronic invoice",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camaleaun/s5panfe.git"
+  },
+  "keywords": [
+    "nfe"
+  ],
+  "author": "sFive <s5@sfive.com.br> (http://www.sfive.com.br/)",
+  "contributors": [
+    "Gilberto Tavares <camaleaun@gmail.com>",
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camaleaun/s5panfe/issues"
+  },
+  "homepage": "https://github.com/camaleaun/s5panfe#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

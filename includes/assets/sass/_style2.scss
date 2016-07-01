@@ -1,0 +1,108 @@
+.line-gray {
+	height: 1px;
+	width: 100%;
+	background-color: #bcbdc1;
+}
+
+.content {
+	padding: 0 20px 0 20px;
+}
+
+.box-search {
+	background-color: #f2f3f7;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #dedfe4;
+	border-right: 1px solid #dedfe4;
+	border-bottom: 1px solid #dedfe4;
+	padding: 25px 40px 16px 40px;
+}
+
+.text-1 {
+	font-family: 'open sans';
+	color: #68696b;
+	font-size: 13px;
+}
+
+.input-tp1 {
+	border-color: #dadada;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    font-family: 'open sans';
+}
+
+.select-tp1 {
+	border-color: #dadada;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    font-family: 'open sans';
+}
+
+.btn-gray {
+  color: #FFFFFF;
+  background-color: #707070;
+  border-color: #707070;
+}
+
+.btn-gray:hover,
+.btn-gray:focus,
+.btn-gray:active,
+.btn-gray.active,
+.open .dropdown-toggle.btn-gray {
+  color: #FFFFFF;
+  background-color: #707070;
+  border-color: #707070;
+}
+
+.btn-gray:active,
+.btn-gray.active,
+.open .dropdown-toggle.btn-gray {
+  background-image: none;
+}
+
+.btn-gray.disabled,
+.btn-gray[disabled],
+fieldset[disabled] .btn-gray,
+.btn-gray.disabled:hover,
+.btn-gray[disabled]:hover,
+fieldset[disabled] .btn-gray:hover,
+.btn-gray.disabled:focus,
+.btn-gray[disabled]:focus,
+fieldset[disabled] .btn-gray:focus,
+.btn-gray.disabled:active,
+.btn-gray[disabled]:active,
+fieldset[disabled] .btn-gray:active,
+.btn-gray.disabled.active,
+.btn-gray[disabled].active,
+fieldset[disabled] .btn-gray.active {
+  background-color: #707070;
+  border-color: #707070;
+}
+
+.btn-gray .badge {
+  color: #707070;
+  background-color: #FFFFFF;
+}
+
+.alert-per1 {
+	background-color: #99b9ae;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.alert-per1 a{
+	color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+}
+
+.alert-per2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.alert-per2 strong{
+    font-family: 'Open Sans', sans-serif;
+}

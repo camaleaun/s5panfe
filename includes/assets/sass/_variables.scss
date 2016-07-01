@@ -1,0 +1,75 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-light:             #79797b !default;
+$gray-lighter:           #9e9e9e !default;
+
+$brand-primary:         #005536 !default;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #ebedf3 !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-oswald:      Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$headings-font-family:    $font-family-oswald !default;
+
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+//** Load fonts from this directory.
+
+$icon-font-path: "../fonts/" !default;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-default-color:              #fff !default;
+$btn-default-bg:                 #76a291 !default;
+$btn-default-border:             transparent !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 #e07900 !default;
+$btn-primary-border:             transparent !default;
+
+$btn-export-bg:                 #3c7d65 !default;
+
+
+//== Forms
+//
+//##
+
+$input-height-large:             44px !default;
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+$navbar-height:                    128px !default;
+$navbar-height-xs:                 50px !default;
+
+$navbar-default-bg:                #fff !default;
+$navbar-default-border:            transparent !default;
