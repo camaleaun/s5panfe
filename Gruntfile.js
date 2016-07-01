@@ -12,19 +12,6 @@ module.exports = function (grunt) {
     // Meta data
     pkg: grunt.file.readJSON('package.json'),
 
-    copy: {
-      bower: {
-        files: [
-          {
-            expand: true,
-            cwd: 'bower_components/bootstrap-sass/assets/stylesheets/',
-            src: ['**/*.scss'],
-            dest: 'includes/assets/sass/twbs/'
-          }
-        ]
-      }
-    },
-
     sass: {
       main: {
         options: {
@@ -65,20 +52,12 @@ module.exports = function (grunt) {
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
 
-  grunt.registerTask('composer', ['shell:composer']);
-  grunt.registerTask('wpcli', ['shell:wpCli']);
-  grunt.registerTask('wpCoreDownload', ['shell:wpCoreDownload']);
-  grunt.registerTask('wpCoreConfig', ['shell:wpCoreConfig']);
-  grunt.registerTask('wpCoreInstall', ['shell:wpCoreInstall']);
-  grunt.registerTask('bowerInstall', ['shell:bowerInstall', 'copy:bower']);
   grunt.registerTask('style', ['sass', 'autoprefixer']);
-  grunt.registerTask('install', ['wpcli', 'wpCoreDownload', 'shell:tcpdf']);
+  grunt.registerTask('install', ['watch']);
 
   grunt.registerTask('default', ['watch']);
 

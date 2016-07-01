@@ -11,7 +11,7 @@
   ],
   "author": "sFive <s5@sfive.com.br> (http://www.sfive.com.br/)",
   "contributors": [
-    "Gilberto Tavares <camaleaun@gmail.com>",
+    "Gilberto Tavares <camaleaun@gmail.com>"
   ],
   "license": "ISC",
   "bugs": {
@@ -21,8 +21,10 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-autoprefixer": "^3.0.4",
-    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "install": "grunt install"
   }
 }
