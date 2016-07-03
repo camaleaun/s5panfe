@@ -12,6 +12,18 @@ module.exports = function (grunt) {
     // Meta data
     pkg: grunt.file.readJSON('package.json'),
 
+    makepot: {
+      target: {
+        options: {
+          cwd:         '.',
+          domainPath:  'languages',
+          type:        'wp-plugin',
+          mainFile:    's5panfe.php',
+          potFilename: 's5panfe.pot'
+        }
+      }
+    },
+
     sass: {
       main: {
         options: {
@@ -55,6 +67,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-wp-i18n');
 
   grunt.registerTask('style', ['sass', 'autoprefixer']);
   grunt.registerTask('install', ['watch']);

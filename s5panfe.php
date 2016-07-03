@@ -72,10 +72,22 @@ if ( ! class_exists( 's5panfe' ) ) :
 
 		/**
 		 * Hook into actions and filters.
-		 * @since 1.0.0
 		 */
 		private function init_hooks() {
 			register_activation_hook( __FILE__, array( 's5panfe_Install', 'install' ) );
+		}
+
+	/**
+		 * What type of request is this?
+		 *
+		 * @param  string $type admin.
+		 * @return bool
+		 */
+		private function is_request( $type ) {
+			switch ( $type ) {
+				case 'admin' :
+					return is_admin();
+			}
 		}
 
 		/**
@@ -84,6 +96,10 @@ if ( ! class_exists( 's5panfe' ) ) :
 		public function includes() {
 			include_once( 'includes/s5panfe-core-functions.php' );
 			include_once( 'includes/class-s5panfe-install.php' );
+
+			if ( $this->is_request( 'admin' ) ) {
+				include_once( 'includes/admin/class-s5panfe-admin.php' );
+			}
 		}
 	}
 
