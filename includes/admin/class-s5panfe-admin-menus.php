@@ -31,7 +31,7 @@ class S5panfe_Admin_Menus {
 	 * Add menu items.
 	 */
 	public function admin_menu() {
-		add_menu_page( __( 'Invoice', 'panfe' ), __( 'Invoice', 'panfe' ), 'manage_options', 'panfe', null, null, '55.5' );
+		add_menu_page( __( 'Invoice', 's5panfe' ), __( 'Invoice', 's5panfe' ), 'manage_options', 's5panfe', null, null, '55.5' );
 	}
 }
 

@@ -31,9 +31,10 @@ module.exports = function (grunt) {
           style: 'compressed'
         },
         files: {
-          'includes/assets/css/style.css': 'includes/assets/sass/style.scss'
+          'assets/css/style.css': 'assets/sass/style.scss',
+          'assets/css/menu.css': 'assets/sass/menu.scss'
         }
-      }
+      },
     },
 
     autoprefixer: {
@@ -50,13 +51,16 @@ module.exports = function (grunt) {
         ]
       },
       style: {
-        src: ['includes/assets/css/style.css']
+        src: [
+          'assets/css/style.css',
+          'assets/css/menu.css'
+        ]
       }
     },
 
     watch: {
       style: {
-        files: 'includes/assets/sass/*.scss',
+        files: 'assets/sass/*.scss',
         tasks: ['style']
       }
     }

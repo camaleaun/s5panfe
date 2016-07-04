@@ -30,6 +30,7 @@ class S5panfe_Admin {
 	 */
 	public function includes() {
 		include_once( 'class-s5panfe-admin-menus.php' );
+		include_once( 'class-s5panfe-admin-assets.php' );
 	}
 }
 

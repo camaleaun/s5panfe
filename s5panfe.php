@@ -64,6 +64,7 @@ if ( ! class_exists( 's5panfe' ) ) :
 		 * s5panfe Constructor.
 		 */
 		public function __construct() {
+			$this->define_constants();
 			$this->includes();
 			$this->init_hooks();
 
@@ -75,6 +76,26 @@ if ( ! class_exists( 's5panfe' ) ) :
 		 */
 		private function init_hooks() {
 			register_activation_hook( __FILE__, array( 's5panfe_Install', 'install' ) );
+			add_action( 'init', array( $this, 'init' ), 0 );
+		}
+
+		/**
+		 * Define s5panfe Constants.
+		 */
+		private function define_constants() {
+			$this->define( 'S5PANFE_VERSION', $this->version );
+		}
+
+		/**
+		 * Define constant if not already set.
+		 *
+		 * @param  string $name
+		 * @param  string|bool $value
+		 */
+		private function define( $name, $value ) {
+			if ( ! defined( $name ) ) {
+				define( $name, $value );
+			}
 		}
 
 	/**
@@ -100,6 +121,35 @@ if ( ! class_exists( 's5panfe' ) ) :
 			if ( $this->is_request( 'admin' ) ) {
 				include_once( 'includes/admin/class-s5panfe-admin.php' );
 			}
+		}
+
+		/**
+		 * Init s5panfe when WordPress Initialises.
+		 */
+		public function init() {
+			// Before init action
+			do_action( 'before_s5panfe_init' );
+
+			// Set up localisation
+			$this->load_plugin_textdomain();
+
+			// Init action
+			do_action( 's5panfe_init' );
+		}
+
+		/**
+		 * Load Localisation files.
+		 */
+		public function load_plugin_textdomain() {
+			load_plugin_textdomain( 's5panfe', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+		}
+
+		/**
+		 * Get the plugin url.
+		 * @return string
+		 */
+		public function plugin_url() {
+			return untrailingslashit( plugins_url( '/', __FILE__ ) );
 		}
 	}
 

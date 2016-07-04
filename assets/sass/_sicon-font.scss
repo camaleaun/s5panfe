@@ -11,3 +11,17 @@
        url('#{$icon-font-path}siconpanfe.svg#siconpanfe') format('svg');
 }
 
+#adminmenu {
+  #toplevel_page_s5panfe {
+    .menu-icon-generic {
+      div {
+       &.wp-menu-image {
+         &:before {
+           font-family: siconpanfe;
+           content: "\e001";
+         }
+        }
+      }
+    }
+  }
+}
