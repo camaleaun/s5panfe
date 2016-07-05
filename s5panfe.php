@@ -98,7 +98,7 @@ if ( ! class_exists( 's5panfe' ) ) :
 			}
 		}
 
-	/**
+		/**
 		 * What type of request is this?
 		 *
 		 * @param  string $type admin.

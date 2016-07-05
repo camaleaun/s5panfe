@@ -21,8 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @param  int|WP_User|null $user
  * @return array
  */
-function s5panfe_add_mime_xml( $mimetypes, $user ) {
+function s5panfe_add_mime_xml( $mimetypes ) {
 	$mimetypes['xml'] = 'application/xml';
 	return $mimetypes;
 }
-add_filter( 'upload_mimes', 's5panfe_add_mime_xml', 10, 2 );
+add_filter( 'upload_mimes', 's5panfe_add_mime_xml', 10 );
