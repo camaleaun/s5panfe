@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: s5panfe 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/s5panfe\n"
 "POT-Creation-Date: 2016-07-03 23:07:35+00:00\n"
-"PO-Revision-Date: 2016-07-03 22:27-0300\n"
+"PO-Revision-Date: 2016-07-05 02:37-0300\n"
 "Last-Translator: Gilberto Tavares <camaleaun@gmail.com>\n"
 "Language-Team: sFive <s5@sfive.com.br>\n"
 "X-Generator: Poedit 1.5.4\n"
@@ -22,7 +22,7 @@ msgstr "NF-e"
 
 #. Plugin Name of the plugin/theme
 msgid "s5panfe"
-msgstr "s5panfe"
+msgstr "Portal Auxiliar NFe"
 
 #. Plugin URI of the plugin/theme
 msgid "http://www.sfive.com.br/panfe/"
